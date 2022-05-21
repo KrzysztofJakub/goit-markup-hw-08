@@ -1,3 +1,20 @@
 body {
     background-color: #E5E5E5;
+    font-family: Roboto, Raleway, sans-serif;
+    color: #212121;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #2196F3;
+    cursor: pointer;
+}
+
+.text-boxes li {
+    position: block;
+    display: inline;
+}
+
+nav li {
+    display: inline;
 }
