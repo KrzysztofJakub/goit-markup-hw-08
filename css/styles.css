@@ -14,11 +14,147 @@ button:hover {
     cursor: pointer;
 }
 
-.text-boxes li {
-    position: block;
-    display: inline;
+.features,
+.team-members,
+.menu,
+.portfolio-types,
+.portfolio-items {
+    list-style: none;
 }
 
-nav li {
-    display: inline;
+.slider {
+    background-color: #2F303A;
+}
+
+.btn-main {
+    color: #fff;
+    background-color: #2196F3;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover, .link:focus {
+    color: #2196F3;
+}
+
+/* Brand logo */
+.brand-logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.logo-header {
+    color: #000;
+}
+.logo-footer {
+    color: #FFF;
+}
+
+/* Navigation */
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #212121;
+}
+
+.contact-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #757575;
+}
+
+.contact-link:hover, .contact-link:focus {
+    color: #2196F3;
+}
+
+/* Footer */
+.brand-address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #FFF;
+}
+.brand-address .link {
+    display: block;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+/* Text boxes */
+.text-boxes {
+    list-style: none;
+}
+
+.text-box-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.text-box-content {
+    font-size: 14px;
+    line-height: 1.71;    
+    color: #757575;
+}
+
+/* Section titles */
+.main-page-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.main-page-subtitle {
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+/* Team members section */
+.team-member-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.team-member-role {
+    font-size: 16px;
+    line-height: 1.19;
+    color: #757575;
+}
+
+/* Portfolio section */
+.portfolio-btn {
+    background: #F5F4FA;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+
+.portfolio-item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.portfolio-item-type {
+    font-size: 16px;
+    line-height: 1.88;
+    color: #757575;
 }
