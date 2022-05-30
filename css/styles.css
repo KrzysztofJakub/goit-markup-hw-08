@@ -8,9 +8,14 @@ footer {
     background-color: #2F303A;
 }
 
+:root {
+    --main-brand-color: #2196F3;
+    --main-text-color: #757575;
+}
+
 button:hover {
     color: #fff;
-    background-color: #2196F3;
+    background-color: var(--main-brand-color);
     cursor: pointer;
 }
 
@@ -26,9 +31,9 @@ button:hover {
     background-color: #2F303A;
 }
 
-.btn-main {
+.slider-btn {
     color: #fff;
-    background-color: #2196F3;
+    background-color: var(--main-brand-color);
     width: 200px;
     height: 50px;
     font-weight: 700;
@@ -41,7 +46,7 @@ button:hover {
 }
 
 .link:hover, .link:focus {
-    color: #2196F3;
+    color: var(--main-brand-color);
 }
 
 /* Brand logo */
@@ -50,7 +55,7 @@ button:hover {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: #2196F3;
+    color: var(--main-brand-color);
     text-decoration: none;
 }
 
@@ -75,11 +80,11 @@ button:hover {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: #757575;
+    color: var(--main-text-color);
 }
 
 .contact-link:hover, .contact-link:focus {
-    color: #2196F3;
+    color: var(--main-brand-color);
 }
 
 /* Footer */
@@ -89,9 +94,15 @@ button:hover {
     line-height: 1.71;
     color: #FFF;
 }
+
 .brand-address .link {
     display: block;
     color: hsla(0, 0%, 100%, 0.6);
+}
+
+.brand-address .link:hover,
+.brand-address .link:focus {
+    color: var(--main-text-color);
 }
 
 /* Text boxes */
@@ -109,11 +120,11 @@ button:hover {
 .text-box-content {
     font-size: 14px;
     line-height: 1.71;    
-    color: #757575;
+    color: var(--main-text-color);
 }
 
 /* Section titles */
-.main-page-title {
+.slider-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -135,7 +146,7 @@ button:hover {
 .team-member-role {
     font-size: 16px;
     line-height: 1.19;
-    color: #757575;
+    color: var(--main-text-color);
 }
 
 /* Portfolio section */
@@ -156,5 +167,5 @@ button:hover {
 .portfolio-item-type {
     font-size: 16px;
     line-height: 1.88;
-    color: #757575;
+    color: var(--main-text-color);
 }
