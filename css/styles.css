@@ -1,3 +1,8 @@
+:root {
+    --main-brand-color: #2196F3;
+    --main-text-color: #757575;
+}
+
 body {
     background-color: #FFF;
     font-family: Roboto, Raleway, sans-serif;
@@ -6,11 +11,6 @@ body {
 
 footer {
     background-color: #2F303A;
-}
-
-:root {
-    --main-brand-color: #2196F3;
-    --main-text-color: #757575;
 }
 
 button:hover {
