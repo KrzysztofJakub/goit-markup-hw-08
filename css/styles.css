@@ -3,6 +3,11 @@
     --main-text-color: #757575;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 body {
     background-color: #FFF;
     font-family: Roboto, Raleway, sans-serif;
@@ -21,14 +26,44 @@ button:hover {
 
 .features,
 .team-members,
-.menu,
+.page-header-menu,
 .portfolio-types,
-.portfolio-items {
+.portfolio-items,
+.page-header-contacts {
     list-style: none;
 }
 
+/* Header */
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header-menu {
+    display: flex;
+}
+
+.page-header-link {
+    margin: auto 50px;
+}
+
+.page-header-contacts {
+    display: flex;
+}
+
+.page-header-contacts .contact-link {
+    margin: auto 30px;
+}
+
+/*header end*/
+
+/*slider start */
 .slider {
     background-color: #2F303A;
+    min-height: 600px;
+    text-align: center;
+    padding: 200px 0;
 }
 
 .slider-btn {
@@ -67,7 +102,7 @@ button:hover {
 }
 
 /* Navigation */
-.nav-link {
+.page-header-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -107,6 +142,7 @@ button:hover {
 
 /* Text boxes */
 .text-boxes {
+    display: flex;
     list-style: none;
 }
 
