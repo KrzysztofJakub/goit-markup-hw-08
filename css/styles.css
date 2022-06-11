@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     --main-brand-color: #2196F3;
     --main-text-color: #757575;
@@ -29,7 +35,8 @@ button:hover {
 .page-header-menu,
 .portfolio-types,
 .portfolio-items,
-.page-header-contacts {
+.page-header-contacts,
+.footer-elements {
     list-style: none;
 }
 
@@ -38,6 +45,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .page-header-menu {
@@ -92,6 +100,13 @@ button:hover {
     line-height: 1.19;
     color: var(--main-brand-color);
     text-decoration: none;
+}
+
+.features,
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logo-header {
@@ -171,18 +186,30 @@ button:hover {
 .main-page-subtitle {
     font-size: 36px;
     line-height: 1.17;
+    text-align: center;
 }
 
 /* Team members section */
+.main-page-team {
+    background-color: #F5F4FA;
+    padding: 94px;
+}
 .team-member-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
 }
 .team-member-role {
     font-size: 16px;
     line-height: 1.19;
     color: var(--main-text-color);
+    text-align: center;
+}
+.team-members-item {
+    background-color: #FFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 /* Portfolio section */
@@ -204,4 +231,9 @@ button:hover {
     font-size: 16px;
     line-height: 1.88;
     color: var(--main-text-color);
+}
+
+.main-page-features,
+.main-page-text-boxes {
+    padding: 94px;
 }
