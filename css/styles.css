@@ -161,6 +161,9 @@ footer {
 .brand-address .link:focus {
     color: var(--main-text-color);
 }
+.footer-logo {
+    margin-bottom: 20px;
+}
 
 /* Text boxes */
 .text-boxes {
@@ -229,12 +232,17 @@ footer {
 }
 
 /* Portfolio section */
+.portfolio-filter {
+    padding: 94px 0 50px;
+}
 .portfolio-btn {
     background: #F5F4FA;
+    border: 0;
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    padding: 6px 22px;
 }
 
 .portfolio-item-title {
@@ -248,12 +256,6 @@ footer {
     font-size: 16px;
     line-height: 1.88;
     color: var(--main-text-color);
-}
-
-.main-page-features,
-.main-page-text-boxes,
-.slider {
-    margin-bottom: 94px;
 }
 
 .portfolio-types {
@@ -278,4 +280,12 @@ footer {
 }
 .portfolio-item:nth-child(3n + 1){
     margin-left: 0;
+}
+
+
+.main-page-features,
+.main-page-text-boxes,
+.slider, 
+.portfolio {
+    margin-bottom: 94px;
 }
