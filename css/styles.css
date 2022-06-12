@@ -1,7 +1,6 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
 :root {
@@ -12,6 +11,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 body {
@@ -41,6 +41,10 @@ button:hover {
 }
 
 /* Header */
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+    padding: 25px;
+}
 .page-header .container {
     display: flex;
     justify-content: space-between;
@@ -138,6 +142,9 @@ button:hover {
 }
 
 /* Footer */
+footer {
+    padding: 60px 0;
+}
 .brand-address {
     font-style: normal;
     font-size: 14px;
@@ -178,15 +185,22 @@ button:hover {
 .slider-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
+    line-height: 1.36em;
     text-transform: uppercase;
     color: #FFF;
+    max-width: 630px;
+    margin: 0 auto 30px;
 }
 
 .main-page-subtitle {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+}
+
+.features-title,
+.members-title {
+    margin-bottom: 50px;
 }
 
 /* Team members section */
@@ -199,12 +213,14 @@ button:hover {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin: 30px auto 10px;
 }
 .team-member-role {
     font-size: 16px;
     line-height: 1.19;
     color: var(--main-text-color);
     text-align: center;
+    margin-bottom: 30px;
 }
 .team-members-item {
     background-color: #FFF;
@@ -225,6 +241,7 @@ button:hover {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 .portfolio-item-type {
@@ -234,6 +251,31 @@ button:hover {
 }
 
 .main-page-features,
-.main-page-text-boxes {
-    padding: 94px;
+.main-page-text-boxes,
+.slider {
+    margin-bottom: 94px;
+}
+
+.portfolio-types {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-types-item {
+    margin: 0 8px;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    max-width: 370px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+}
+.portfolio-item:nth-child(3n + 1){
+    margin-left: 0;
 }
