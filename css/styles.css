@@ -164,6 +164,9 @@ footer {
 .footer-logo {
     margin-bottom: 20px;
 }
+.brand-address a {
+    margin-top: 9px;
+}
 
 /* Text boxes */
 .text-boxes {
@@ -250,12 +253,14 @@ footer {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    padding: 20px 24px 4px;
 }
 
 .portfolio-item-type {
     font-size: 16px;
     line-height: 1.88;
     color: var(--main-text-color);
+    padding: 0 24px 20px;
 }
 
 .portfolio-types {
