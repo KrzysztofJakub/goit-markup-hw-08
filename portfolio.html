@@ -24,8 +24,12 @@
             </ul>
         </nav>
         <ul class="page-header-contacts">
-            <li><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a></li>
-            <li><a href="tel:+48111111111" class="contact-link">+48 111 111 111</a></li>
+            <li><a href="mailto:info@devstudio.com" class="contact-link"><svg class="icon envelope">
+                        <use href="/images/icons.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com</a></li>
+            <li><a href="tel:+48111111111" class="contact-link"><svg class="icon smartphone">
+                        <use href="images/icons.svg#icon-smartphone"></use>
+                    </svg>+48 111 111 111</a></li>
         </ul>
     </div>
 </header>
@@ -97,18 +101,39 @@
     </main>
     <footer>
         <div class="container">
-            <ul class="footer-elements">
-                <li class="footer-logo">
-                    <a href="index.html" class="brand-logo">Web<span class="logo-footer">Studio</span></a>
-                </li>
-                <li>
-                    <address class="brand-address">
-                        m. Warszawa, Aleje Jerozolimskie 21
-                        <a href="mailto:info@example.com" class="link contact-link">info@example.com</a>
-                        <a href="tel:+48111111111" class="link contact-link">+48 111 111 111</a>
-                    </address>
-                </li>
-            </ul>
+            <section class="footer-elements">
+                <ul class="footer-address">
+                    <li class="footer-logo">
+                        <a href="index.html" class="brand-logo">Web<span class="logo-footer">Studio</span></a>
+                    </li>
+                    <li>
+                        <address class="brand-address">
+                            m. Warszawa, Aleje Jerozolimskie 21
+                            <a href="mailto:info@example.com" class="link contact-link">info@example.com</a>
+                            <a href="tel:+48111111111" class="link contact-link">+48 111 111 111</a>
+                        </address>
+                    </li>
+                </ul>
+                <ul class="footer-social-links">
+                    <li class="footer-social-links-header">Dołącz do nas</li>
+                    <li>
+                        <ul class="footer-social-links-list">
+                            <li><a class="footer-social-link" href="#"><svg class="team-member-social-link-icon">
+                                        <use href="/images/icons.svg#icon-instagram"></use>
+                                    </svg></a></li>
+                            <li><a class="footer-social-link" href="#"><svg class="team-member-social-link-icon">
+                                        <use href="/images/icons.svg#icon-twitter"></use>
+                                    </svg></a></li>
+                            <li><a class="footer-social-link" href="#"><svg class="team-member-social-link-icon">
+                                        <use href="/images/icons.svg#icon-facebook"></use>
+                                    </svg></a></li>
+                            <li><a class="footer-social-link" href="#"><svg class="team-member-social-link-icon">
+                                        <use href="/images/icons.svg#icon-linkedin"></use>
+                                    </svg></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
         </div>
     </footer>
 </body>

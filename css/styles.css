@@ -39,7 +39,10 @@ button:hover {
 .footer-elements,
 .text-boxes,
 .team-member-social-links,
-.clients {
+.clients,
+.footer-address,
+.footer-social-links,
+.footer-social-links-list {
     list-style: none;
 }
 
@@ -87,12 +90,29 @@ button:hover {
 /*header end*/
 
 /*slider start */
-.slider {
+/*.slider {
     background-color: #2F303A;
     min-height: 600px;
     text-align: center;
     padding: 200px 0;
 }
+*/
+.slider {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url('/images/slider-bg.jpg');
+        )
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    text-align: center;
+    padding: 200px 0;
+}
+
+
+
 .slider-btn {
     color: #fff;
     background-color: var(--main-brand-color);
@@ -159,6 +179,12 @@ button:hover {
 footer {
     padding: 60px 0;
 }
+.footer-elements {
+    display: flex;
+}
+.footer-elements>ul {
+    margin-right: 70px;
+}
 .brand-address {
     font-style: normal;
     font-size: 14px;
@@ -182,7 +208,35 @@ footer {
     line-height: 2;
     letter-spacing: 0.03em;
 }
-
+.footer-social-links-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.footer-social-links-list {
+    display: flex;
+    align-items: center;
+}
+.footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFF;
+}
+.footer-social-link:hover {
+    background-color: var(--main-brand-color);
+}
 /* Text boxes */
 .text-boxes {
     display: flex;
