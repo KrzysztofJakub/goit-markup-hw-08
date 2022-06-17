@@ -37,7 +37,9 @@ button:hover {
 .portfolio-items,
 .page-header-contacts,
 .footer-elements,
-.text-boxes {
+.text-boxes,
+.team-member-social-links,
+.clients {
     list-style: none;
 }
 
@@ -75,6 +77,11 @@ button:hover {
 
 .page-header-contacts .contact-link {
     margin-left: 50px;
+}
+
+.contact-link .icon {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 /*header end*/
@@ -189,6 +196,12 @@ footer {
     margin-left: 30px;
     margin-bottom: 30px;
 }
+.text-box-thumbnail {
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+}
 .text-box-title {
     font-weight: 700;
     font-size: 14px;
@@ -227,7 +240,8 @@ footer {
     text-align: center;
 }
 .features-title,
-.members-title {
+.members-title,
+.clients-title {
     margin-bottom: 50px;
 }
 
@@ -255,6 +269,30 @@ footer {
     border-radius: 0px 0px 4px 4px;
     margin-left: 30px;
     margin-bottom: 30px;
+}
+.team-member-social-links {
+    display: flex;
+    align-items: center;
+    margin-left: 22px;
+}
+.team-member-social-links li {
+    margin-left: 10px;
+    margin-bottom: 32px;
+}
+.team-member-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFF;
+    color: #AFB1B8;
+}
+.team-member-social-link:hover {
+    background-color: var(--main-brand-color);
+    color: #FFF;
 }
 
 /* Portfolio section */
@@ -301,4 +339,52 @@ footer {
     margin-left: 30px;
     margin-bottom: 30px;
     border: 1px solid #EEEEEE;
+}
+
+/*Clients section */
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.clients-item {
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    color: #AFB1B8;
+    min-width: 168px;
+    height: 92px;
+}
+.clients-item:hover {
+    color: var(--main-brand-color);
+}
+
+/*Icons size*/
+.envelope {
+    width: 16px;
+    height: 12px;
+}
+.smartphone {
+    width: 10px;
+    height: 16px;
+}
+.text-box-thumbnail-icon {
+    width: 70px;
+    height: 70px;
+}
+.team-member-social-link-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.clients-item-icon {
+    width: 106px;
+    height: 60px;
+    margin: 16px 31px;
+    fill: currentColor;
 }
