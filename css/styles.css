@@ -47,9 +47,11 @@ button:hover {
 }
 .page-header .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+.page-header .brand-logo {
+    margin-right: 93px;
 }
 
 .page-header-menu {
@@ -57,15 +59,16 @@ button:hover {
 }
 
 .page-header-link {
-    margin: auto 50px;
+    margin-right: 46px;
 }
 
 .page-header-contacts {
     display: flex;
+    margin-left: auto;
 }
 
 .page-header-contacts .contact-link {
-    margin: auto 30px;
+    margin-left: 50px;
 }
 
 /*header end*/
