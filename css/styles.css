@@ -102,9 +102,12 @@ button:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    max-height: 1600px;
     min-height: 600px;
+    width: 100%;
     text-align: center;
     padding: 200px 0;
+    margin: 0 auto;
 }
 .slider-btn {
     color: #fff;
