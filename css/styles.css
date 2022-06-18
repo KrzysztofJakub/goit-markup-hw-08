@@ -78,7 +78,10 @@ button:hover {
     display: flex;
     margin-left: auto;
 }
-
+.page-header-contacts .contact-link {
+    display: flex;
+    align-items: center;
+}
 .page-header-contacts .contact-link {
     margin-left: 50px;
 }
@@ -390,7 +393,14 @@ footer {
     max-width: 370px;
     margin-left: 30px;
     margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
+}
+.portfolio-item img {
+    display: block;
+}
+.portfolio-item figcaption {
+    border-right: 1px solid #EEE; 
+    border-bottom: 1px solid #EEE;
+    border-left: 1px solid #EEE;
 }
 .portfolio-item:hover {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
