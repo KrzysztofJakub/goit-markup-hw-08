@@ -37,7 +37,7 @@
         <section class="slider section">
         <div class="container">
             <h1 class="slider-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button type="button" class="slider-btn">Zamów usługę</button>
+            <button type="button" class="slider-btn" data-modal-open>Zamów usługę</button>
         </div>
         </section>
         <section class="section">
@@ -208,5 +208,15 @@
             </section>
         </div>
     </footer>
+    <div class="modal-backdrop is-hidden" data-modal>
+        <div class="modal-box">
+            <button class="modal-box-close-btn" type="button" data-modal-close>
+                <svg class="modal-box-close-icon">
+                    <use href="./images/icons.svg#icon-modal-box-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
