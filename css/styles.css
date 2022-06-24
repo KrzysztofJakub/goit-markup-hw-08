@@ -38,7 +38,8 @@ footer {
 .clients,
 .footer-address,
 .footer-social-links,
-.footer-social-links-list {
+.footer-social-links-list,
+.footer-newsletter {
     list-style: none;
 }
 
@@ -228,7 +229,8 @@ footer {
     line-height: 2;
     letter-spacing: 0.03em;
 }
-.footer-social-links-header {
+.footer-social-links-header,
+.footer-newsletter-header {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
