@@ -226,6 +226,21 @@
                     <use href="./images/icons.svg#icon-modal-box-close"></use>
                 </svg>
             </button>
+            <p class="modal-box-title">Zostaw swoje dane w formularzu poniżej</p>
+            <form class="modal-box-signup-form" name="signup-form" method="POST">
+                <label class="modal-box-signup-form-label" for="name">Imię</label>
+                  <input class="modal-box-signup-form-input bg-img-name" type="text" name="name" id="name">
+                <label class="modal-box-signup-form-label" for="phone">Telefon</label>
+                  <input class="modal-box-signup-form-input bg-img-phone" type="text" name="phone" id="phone">
+                <label class="modal-box-signup-form-label" for="email">E-mail</label>
+                  <input class="modal-box-signup-form-input bg-img-email" type="text" name="email" id="email">
+                <label class="modal-box-signup-form-label" for="comment">Komentarz</label>
+                  <textarea class="modal-box-signup-form-textarea" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
+                <label class="modal-box-signup-form-terms" for="terms">
+                    <input class="modal-box-signup-form-terms-checkbox hidden" type="checkbox" name="terms-and-privacy" value="agree" id="terms">
+                        <p>Oświadczam, że akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę prywatności</a>.</p>
+                </label>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
