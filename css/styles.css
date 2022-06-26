@@ -261,6 +261,47 @@ footer {
 .footer-social-link:focus {
     background-color: var(--main-brand-color);
 }
+.footer-newsletter-form {
+    display: flex;
+}
+.footer-newsletter-form-input {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px 16px;
+    width: 358px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--main-transition), border-color var(--main-transition);
+}
+.footer-newsletter-form-input:hover,
+.footer-newsletter-form-input:focus,
+.footer-newsletter-form-input:active {
+    outline: none;
+    color: rgba(255, 255, 255, 1);
+    border-color: #FFF;
+}
+.footer-newsletter-form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-brand-color);
+    border: 0;
+    border-radius: 4px;
+    width: 200px;
+    padding: 10px 0px;
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #FFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
 /* Text boxes */
 .text-boxes {
     display: flex;
@@ -547,6 +588,12 @@ footer {
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+}
+.newsletter-submit-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
+    fill: #FFF;
 }
 
 /* Modal window */
