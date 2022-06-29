@@ -241,7 +241,7 @@ footer {
     margin-bottom: 20px;
 }
 .footer-social-links {
-    margin-right: 78px;
+    margin-right: auto;
 }
 .footer-social-links-list {
     display: flex;
