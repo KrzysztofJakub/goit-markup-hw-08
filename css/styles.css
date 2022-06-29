@@ -26,7 +26,7 @@ footer {
     background-color: #2F303A;
 }
 
-.features,
+.features-list,
 .team-members,
 .page-header-menu,
 .portfolio-types,
@@ -198,7 +198,6 @@ footer {
 
 
 
-.features,
 .team-members,
 .portfolio-items {
     display: flex;
@@ -352,13 +351,17 @@ footer {
     margin-left: 30px;
     margin-bottom: 30px;
 }
-.text-box-thumbnail {
+.text-box__thumbnail {
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
     padding: 25px 100px;
 }
-.text-box-title {
+.text-box__icon {
+    width: 70px;
+    height: 70px;
+}
+.text-box__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -366,7 +369,7 @@ footer {
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-.text-box-content {
+.text-box__content {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -374,15 +377,22 @@ footer {
 }
 
 /*Features section*/
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
 .features-item {
     margin-left: 30px;
     margin-bottom: 30px;
     position: relative;
 }
-.features-item img {
+.features-item__img {
     display: block;
 }
-.features-item-label {
+.features-item__label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -392,15 +402,13 @@ footer {
     max-width: 370px;
     width: 100%;
     min-height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
-}
-.features-item-label p {
     font-weight: 700;
     line-height: 1.14px;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* Section titles */
@@ -590,10 +598,7 @@ footer {
 
 /*Icons size*/
 
-.text-box-thumbnail-icon {
-    width: 70px;
-    height: 70px;
-}
+
 .team-member-social-link-icon {
     width: 20px;
     height: 20px;
