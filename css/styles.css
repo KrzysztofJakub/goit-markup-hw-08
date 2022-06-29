@@ -52,28 +52,29 @@ footer {
     border-bottom: 1px solid #ECECEC;
     /*padding: 25px;*/
 }
-.page-header .container {
+.container--flex {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-.page-header .brand-logo {
+.brand-logo--header {
     margin-right: 93px;
 }
 
-.page-header-menu {
+.menu {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin-left: -46px;
+    list-style-type: none;
 }
 
-.page-header-menu li {
+.menu__item {
     position: relative;
     margin-left: 46px;
 }
 
-.page-header-link {
+.menu__link {
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -83,11 +84,11 @@ footer {
     color: #212121;
     min-height: 80px;
 }
-.active-page {
+.menu__link--active {
     color: var(--main-brand-color);
 }
-.active-page::after,
-.page-header-link:hover::after {
+.menu__link--active::after,
+.menu__link:hover::after {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -99,18 +100,16 @@ footer {
     transition: var(--main-transition);
 }
 
-.page-header-contacts {
+.header-contacts {
     display: flex;
     margin-left: auto;
+    list-style-type: none;
 }
-.page-header-contacts .contact-link {
+
+.header-contacts__link {
+    margin-left: 50px;
     display: flex;
     align-items: center;
-}
-.page-header-contacts .contact-link {
-    margin-left: 50px;
-}
-.contact-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -119,15 +118,32 @@ footer {
     color: var(--main-text-color);
     transition: color var(--main-transition);
 }
-
-.contact-link:hover,
-.contact-link:focus {
+.header-contacts__link:hover,
+.header-contacts__link:focus {
     color: var(--main-brand-color);
 }
-
-.contact-link .icon {
+.header-contacts__icon-envelope {
     fill: currentColor;
     margin-right: 10px;
+    width: 16px;
+    height: 12px;
+}
+.header-contacts__icon-smartphone {
+    fill: currentColor;
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+}
+
+/**For footer contact links*/
+.contact-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--main-text-color);
+    transition: color var(--main-transition);
 }
 
 /*slider start */
@@ -563,14 +579,7 @@ footer {
 }
 
 /*Icons size*/
-.envelope {
-    width: 16px;
-    height: 12px;
-}
-.smartphone {
-    width: 10px;
-    height: 16px;
-}
+
 .text-box-thumbnail-icon {
     width: 70px;
     height: 70px;
