@@ -219,28 +219,28 @@
             </section>
         </div>
     </footer>
-    <div class="modal-backdrop is-hidden" data-modal>
+    <div class="modal-backdrop modal-backdrop--is-hidden" data-modal>
         <div class="modal-box">
-            <button class="modal-box-close-btn" type="button" data-modal-close>
-                <svg class="modal-box-close-icon">
+            <button class="close-btn" type="button" data-modal-close>
+                <svg class="close-btn__icon">
                     <use href="./images/icons.svg#icon-modal-box-close"></use>
                 </svg>
             </button>
-            <p class="modal-box-title">Zostaw swoje dane w formularzu poniżej</p>
-            <form class="modal-box-signup-form" name="signup-form" method="POST">
-                <label class="modal-box-signup-form-label" for="name">Imię</label>
-                  <input class="modal-box-signup-form-input bg-img-name" type="text" name="name" id="name">
-                <label class="modal-box-signup-form-label" for="phone">Telefon</label>
-                  <input class="modal-box-signup-form-input bg-img-phone" type="text" name="phone" id="phone">
-                <label class="modal-box-signup-form-label" for="email">E-mail</label>
-                  <input class="modal-box-signup-form-input bg-img-email" type="text" name="email" id="email">
-                <label class="modal-box-signup-form-label" for="comment">Komentarz</label>
-                  <textarea class="modal-box-signup-form-textarea" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
-                <label class="modal-box-signup-form-terms" for="terms">
-                    <input class="modal-box-signup-form-terms-checkbox hidden" type="checkbox" name="terms-and-privacy" value="agree" id="terms">
-                        <p>Oświadczam, że akceptuję <a class="modal-box-signup-form-terms-link" href="#">Regulamin</a> i <a class="modal-box-signup-form-terms-link" href="#">Politykę prywatności</a>.</p>
+            <p class="modal-box__title">Zostaw swoje dane w formularzu poniżej</p>
+            <form class="signup-form" name="signup-form" method="POST">
+                <label class="signup-form__label" for="name">Imię</label>
+                  <input class="signup-form__input bg-img-name" type="text" name="name" id="name">
+                <label class="signup-form__label" for="phone">Telefon</label>
+                  <input class="signup-form__input bg-img-phone" type="text" name="phone" id="phone">
+                <label class="signup-form__label" for="email">E-mail</label>
+                  <input class="signup-form__input bg-img-email" type="text" name="email" id="email">
+                <label class="signup-form__label" for="comment">Komentarz</label>
+                  <textarea class="signup-form__textarea" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
+                <label class="signup-form__terms" for="terms">
+                    <input class="signup-form__terms-checkbox singup-form__terms-checkbox--hidden" type="checkbox" name="terms-and-privacy" value="agree" id="terms">
+                        <p>Oświadczam, że akceptuję <a class="signup-form__terms-link" href="#">Regulamin</a> i <a class="signup-form__terms-link" href="#">Politykę prywatności</a>.</p>
                 </label>
-                <button class="modal-box-signup-form-btn" type="submit">Wyślij</button>
+                <button class="signup-form-btn" type="submit">Wyślij</button>
             </form>
         </div>
     </div>

@@ -618,21 +618,6 @@ body {
     transform: translateY(0);
 }
 
-
-
-/*Icons size*/
-
-
-
-
-.modal-box-close-icon {
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-}
-
-
 /* Modal window */
 .modal-backdrop {
     position: fixed;
@@ -644,7 +629,7 @@ body {
     transition: var(--main-transition);
     transition-property: visibility, transform, opacity;
 }
-.is-hidden {
+.modal-backdrop--is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -666,21 +651,27 @@ body {
     transform: scale(100%);
     transition: var(--main-transition);
 }
-.modal-box-close-btn {
+.close-btn {
     position: absolute;
     top: 8px;
     right: 8px;
     border: 0;
     background-color: #FFF;
 }
-.modal-box-close-btn:hover {
+.close-btn:hover {
     cursor: pointer;
 }
-.is-hidden .modal-box {
+.close-btn__icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+.modal-backdrop--is-hidden .modal-box {
     transform: scale(50%);
     transition: var(--main-transition);
 }
-.modal-box-title {
+.modal-box__title {
     font-size: 20px;
     font-weight: 700px;
     line-height: 1.15;
@@ -688,18 +679,18 @@ body {
     letter-spacing: 0.03em;
     margin-bottom: 12px;
 }
-.modal-box-signup-form {
+.signup-form {
     display: flex;
     flex-direction: column;
 }
-.modal-box-signup-form-label {
+.signup-form__label {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--main-text-color);
     margin-bottom: 4px;
 }
-.modal-box-signup-form-input {
+.signup-form__input {
     min-width: 100%;
     height: 40px;
     margin-bottom: 10px;
@@ -745,18 +736,18 @@ body {
     transition: background-image var(--main-transition);
 }
 
-.modal-box-signup-form-input:active,
-.modal-box-signup-form-input:hover,
-.modal-box-signup-form-input:focus,
-.modal-box-signup-form-textarea:active,
-.modal-box-signup-form-textarea:hover,
-.modal-box-signup-form-textarea:focus {
+.signup-form__input:active,
+.signup-form__input:hover,
+.signup-form__input:focus,
+.signup-form__textarea:active,
+.signup-form__textarea:hover,
+.signup-form__textarea:focus {
     border: 1px solid var(--main-brand-color);
     outline: none;
     transition: border var(--main-transition);
 }
 
-.modal-box-signup-form-textarea {
+.signup-form__textarea {
     min-width: 100%;
     min-height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -769,7 +760,7 @@ body {
     letter-spacing: 0.01em;
     transition: border var(--main-transition);
 }
-.modal-box-signup-form-terms {
+.signup-form__terms {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -780,10 +771,7 @@ body {
     color: var(--main-text-color);
 }
 
-input.hidden {
-    appearance: none;
-}
-.modal-box-signup-form-terms-checkbox {
+.signup-form__terms-checkbox {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.2222 1.66667V13.3333H1.77778V1.66667H14.2222ZM14.2222 0H1.77778C0.8 0 0 0.75 0 1.66667V13.3333C0 14.25 0.8 15 1.77778 15H14.2222C15.2 15 16 14.25 16 13.3333V1.66667C16 0.75 15.2 0 14.2222 0Z' fill='%23212121'/%3e%3c/svg%3e ");
     width: 16px;
     height: 15px;
@@ -791,15 +779,18 @@ input.hidden {
     cursor: pointer;
     transition: background-image var(--main-transition);
 }
-.modal-box-signup-form-terms-checkbox:checked {
+.signup-form__terms-checkbox--hidden {
+    appearance: none;
+}
+.signup-form__terms-checkbox:checked {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='16' height='15' rx='2' fill='%232196F3'/%3e%3cpath d='M3.95703 7.75166L3.88825 7.68604L3.81923 7.75141L2.93123 8.59258L2.85486 8.66492L2.93097 8.73753L6.42671 12.0724L6.49574 12.1382L6.56476 12.0724L14.069 4.91352L14.1449 4.84116L14.069 4.76881L13.1873 3.92764L13.1183 3.86183L13.0493 3.92761L6.49577 10.1735L3.95703 7.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3e%3c/svg%3e");
     transition: background-image var(--main-transition);
 }
-.modal-box-signup-form-terms-link {
+.signup-form__terms-link {
     color: var(--main-brand-color);
 }
 
-.modal-box-signup-form-btn {
+.signup-form-btn {
     align-self: center;
     font-weight: 700;
     font-size: 16px;
