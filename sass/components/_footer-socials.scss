@@ -1,0 +1,42 @@
+.footer-socials {
+    margin-right: auto;
+}
+.footer-socials__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.footer-socials-list {
+    display: flex;
+    align-items: center;
+}
+
+.footer-socials-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFF;
+    transition: background-color var(--main-transition);
+}
+
+.footer-socials-list__link:hover,
+.footer-socials-list__link:focus {
+    background-color: var(--main-brand-color);
+}
+
+.footer-socials-list__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}

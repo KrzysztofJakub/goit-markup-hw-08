@@ -1,0 +1,18 @@
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: 0;
+    background-color: #FFF;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+}
+
+.close-btn__icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
