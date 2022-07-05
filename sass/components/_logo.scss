@@ -6,12 +6,12 @@
     letter-spacing: 0.03em;
     color: var(--main-brand-color);
     text-decoration: none;
+
+    &--primary {
+        color: #000;
 }
 
-.brand-logo--primary {
-    color: #000;
-}
-
-.brand-logo--secondary {
+    &--secondary {
     color: #FFF;
+    }
 }

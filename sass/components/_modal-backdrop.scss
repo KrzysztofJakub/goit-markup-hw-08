@@ -7,10 +7,10 @@
     background-color: rgba(0, 0, 0, 0.2);
     transition: var(--main-transition);
     transition-property: visibility, transform, opacity;
-}
 
-.modal-backdrop--is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+    &--is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
 }

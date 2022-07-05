@@ -1,36 +1,36 @@
 .header-contacts {
     display: flex;
     margin-left: auto;
+
+    &__link {
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: var(--main-text-color);
+        transition: color var(--main-transition);
+
+        &:hover,
+        &:focus {
+            color: var(--main-brand-color);
+        }
+    }
+
+    &__icon-envelope {
+        fill: currentColor;
+        margin-right: 10px;
+        width: 16px;
+        height: 12px;
 }
 
-.header-contacts__link {
-    margin-left: 50px;
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: var(--main-text-color);
-    transition: color var(--main-transition);
-}
-
-.header-contacts__link:hover,
-.header-contacts__link:focus {
-    color: var(--main-brand-color);
-}
-
-.header-contacts__icon-envelope {
-    fill: currentColor;
-    margin-right: 10px;
-    width: 16px;
-    height: 12px;
-}
-
-.header-contacts__icon-smartphone {
-    fill: currentColor;
-    margin-right: 10px;
-    width: 10px;
-    height: 16px;
+    &__icon-smartphone {
+        fill: currentColor;
+        margin-right: 10px;
+        width: 10px;
+        height: 16px;
+    }
 }
