@@ -8,16 +8,13 @@
     justify-content: space-between;
 }
 
-
-
-
-.footer-newsletter__header {
+.footer-heading {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFF;
+    color: $footer-heading-color;
     margin-top: 12px;
     margin-bottom: 20px;
 }

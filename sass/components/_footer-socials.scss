@@ -7,7 +7,7 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #FFF;
+        color: $footer-heading-color;
         margin-top: 12px;
         margin-bottom: 20px;
     }
@@ -26,13 +26,13 @@
         height: 44px;
         margin-right: 10px;
         border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.1);
-        color: #FFF;
-        transition: background-color var(--main-transition);
+        background-color: $footer-socials-link-bg-color;
+        color: $footer-socials-link-color;
+        transition: background-color $main-transition;
 
         &:hover,
         &:focus {
-            background-color: var(--main-brand-color);
+            background-color: $main-brand-color;
         }
 
     }

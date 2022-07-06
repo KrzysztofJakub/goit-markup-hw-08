@@ -4,8 +4,8 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: var(--main-transition);
+    background-color: $modal-backdrop-color;
+    transition: $main-transition;
     transition-property: visibility, transform, opacity;
 
     &--is-hidden {

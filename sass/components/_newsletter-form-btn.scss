@@ -1,0 +1,25 @@
+.newsletter-form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-brand-color;
+    border: 0;
+    border-radius: 4px;
+    width: 200px;
+    padding: 10px 0px;
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $newsletter-form-btn-color;
+    box-shadow: $newsletter-form-btn-shadow;
+    cursor: pointer;
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 24px;
+        fill: $newsletter-form-btn-color;
+    }
+}

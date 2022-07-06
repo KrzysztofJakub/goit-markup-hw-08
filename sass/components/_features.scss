@@ -3,16 +3,16 @@
     flex-wrap: wrap;
     margin-left: -30px;
     margin-bottom: -30px;
-}
 
-.features-title {
+    &__title {
     margin-bottom: 50px;
-}
+    }
 
-.features-item {
-    margin-left: 30px;
-    margin-bottom: 30px;
-    position: relative;
+    &__item {
+        margin-left: 30px;
+        margin-bottom: 30px;
+        position: relative;
+    }
 
     &__img {
         display: block;
@@ -33,7 +33,7 @@
         text-align: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #FFFFFF;
-        background-color: rgba(47, 48, 58, 0.8);
+        color: $features-list-label-color;
+        background-color: $features-list-label-bg-color;
     }
 }

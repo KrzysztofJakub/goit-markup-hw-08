@@ -1,5 +1,5 @@
 .team {
-    background-color: #F5F4FA;
+    background-color: $team-section-bg-color;
 }
 
 .team-members-title {
@@ -11,14 +11,14 @@
     flex-wrap: wrap;
     margin-left: -30px;
     margin-bottom: -30px;
-}
 
-.team-member {
-    background-color: #FFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    &__item {
+        background-color: $team-members-list-item-bg-color;
+        box-shadow: $team-members-list-item-shadow;
+        border-radius: 0px 0px 4px 4px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
 
     &__name {
         font-weight: 500;
@@ -31,7 +31,7 @@
     &__role {
         font-size: 16px;
         line-height: 1.19;
-        color: var(--main-text-color);
+        color: $main-text-color;
         text-align: center;
         margin-bottom: 16px;
     }

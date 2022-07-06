@@ -3,22 +3,22 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFF;
+    color: $brand-address-color;
     margin-right: 70px;
 
     &__link {
     display: block;
-    color: hsla(0, 0%, 100%, 0.6);
+    color: $brand-address-link-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 2;
     letter-spacing: 0.03em;
     text-decoration: none;
-    transition: color var(--main-transition);
+    transition: $main-transition;
 
         &:hover,
         &:focus {
-            color: var(--main-text-color);
+            color: $main-text-color;
         }
     }
 }

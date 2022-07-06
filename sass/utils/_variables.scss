@@ -1,0 +1,83 @@
+// Colors 
+$body-bg-color: #FFF;
+$body-color: #212121;
+
+$main-brand-color: #2196F3;
+$main-text-color: #757575;
+$secondary-text-color: #212121;
+
+$brand-logo-primary-color: #000;
+$brand-logo-secondary-color: #FFF;
+
+$brand-address-color: #FFF;
+$brand-address-link-color: hsla(0, 0%, 100%, 0.6);
+
+$page-header-border-color: #ECECEC;
+
+$clients-item-color: #AFB1B8;
+
+$close-btn-bg-color: #FFF;
+$close-btn-icon-border-color: rgba(0, 0, 0, 0.1);
+
+$features-list-label-color: #FFF;
+$features-list-label-bg-color: rgba(47, 48, 58, 0.8);
+
+$footer-heading-color: #FFF;
+$footer-socials-link-color: #FFF;
+$footer-socials-link-bg-color: rgba(255, 255, 255, 0.1);
+
+$modal-backdrop-color: rgba(0, 0, 0, 0.2);
+$modal-box-bg-color: #FFF;
+$modal-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+                   0px 1px 1px rgba(0, 0, 0, 0.14),
+                   0px 1px 3px rgba(0, 0, 0, 0.12);
+
+$newsletter-form-input-color: rgba(255, 255, 255, 0.6);
+$newsletter-form-input-border-color: rgba(255, 255, 255, 0.3);
+$newsletter-form-input-mod-color: rgba(255, 255, 255, 1);
+$newsletter-form-input-mod-border-color: #FFF;
+
+$newsletter-form-btn-color: #FFF;
+$newsletter-form-btn-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+
+$portfolio-btn-bg-color: #F5F4FA;
+$portfolio-btn-mod-color: #FFF;
+$portfolio-btn-mod-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                           0px 1px 2px rgba(0, 0, 0, 0.08),
+                           0px 2px 2px rgba(0, 0, 0, 0.12);
+
+$portfolio-list-item-mod-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+                                 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+                                 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+$portfolio-list-figcaption-border-color: #EEE;
+$portfolio-list-desc-color: #FFF;
+$portfolio-list-desc-bg-color: rgba(33, 150, 243, 0.9);
+
+$signup-form-input-border-color: rgba(33, 33, 33, 0.2);
+$signup-form-btn-color: #FFF;
+
+$slider-bg-gradient: linear-gradient(rgba(47, 48, 58, 0.4),
+                                    rgba(47, 48, 58, 0.4));
+$slider-btn-color: #FFF;
+$slider-btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$slider-title-color: #FFF;
+
+$socials-link-color: #AFB1B8;
+$socials-link-bg-color: #FFF;
+
+$team-section-bg-color: #F5F4FA;
+$team-members-list-item-bg-color: #FFF;
+$team-members-list-item-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                               0px 1px 1px rgba(0, 0, 0, 0.14),
+                               0px 2px 1px rgba(0, 0, 0, 0.2);
+
+$text-boxes-thumbnail-color: #F5F4FA;
+
+
+// Fonts
+$main-font-family: Roboto, Raleway, sans-serif;
+
+
+// Other
+$main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
