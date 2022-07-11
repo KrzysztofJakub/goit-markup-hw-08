@@ -37,7 +37,7 @@
         <section class="slider section">
         <div class="container">
             <h1 class="slider__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button type="button" class="slider__btn" data-modal-open>Zamów usługę</button>
+            <button type="button" class="btn btn--slider" data-modal-open>Zamów usługę</button>
         </div>
         </section>
         <section class="section">
@@ -69,7 +69,7 @@
         </section>
         <section class="main-page-features">
             <div class="container">
-            <h2 class="main-page-subtitle features-list__title">Czym się zajmujemy</h2>
+            <h2 class="section__subtitle features-list__title">Czym się zajmujemy</h2>
             <ul class="features-list">
                 <li class="features-list__item"><img class="features-list__img" src="./images/features1.jpg" alt="Our services." width="370" height="294" />
                     <div class="features-list__label">
@@ -92,7 +92,7 @@
         </section>
         <section class="team section">
             <div class="container">
-            <h2 class="main-page-subtitle team-members-title">Nasz zespół</h2>
+            <h2 class="section__subtitle team-members-title">Nasz zespół</h2>
             <ul class="team-members-list">
                 <li class="team-members-list__item">
                     <img src="./images/team-member1.jpg" alt="Team member, product designer" width="270" height="260" />
@@ -143,7 +143,7 @@
         </section>
         <section class="section">
             <div class="container">
-                <h2 class="main-page-subtitle clients__title">Nasi klienci</h2>
+                <h2 class="section__subtitle clients__title">Nasi klienci</h2>
                 <ul class="clients">
                     <li>
                         <a class="clients__item" href="#"><svg class="clients__icon"><use href="./images/icons.svg#icon-client-1"></use></svg></a>
@@ -169,11 +169,10 @@
     </main>
     <footer class="page-footer">
         <div class="container">
-            <section class="footer-elements">
-                <ul class="footer-address">
+            <section class="page-footer__elements">
+                <ul class="page-footer__address">
                     <li class="page-footer__brand-logo">
                         <a href="index.html" class="brand-logo">Web<span class="brand-logo--secondary">Studio</span></a>
-                    
                     <li>
                         <address class="brand-address">
                             m. Warszawa, Aleje Jerozolimskie&nbsp;21
@@ -182,24 +181,24 @@
                         </address>
                     </li>
                 </ul>
-                <ul class="footer-socials">
-                    <li class="footer-heading">Dołącz do nas</li>
+                <ul class="page-footer__socials">
+                    <li class="page-footer__heading">Dołącz do nas</li>
                     <li>
-                        <ul class="footer-socials-list">
-                            <li><a class="footer-socials-list__link" href="#">
-                                    <svg class="footer-socials-list__icon">
+                        <ul class="socials socials--footer">
+                            <li><a class="socials__link socials__link--footer" href="#">
+                                    <svg class="socials__icon">
                                         <use href="./images/icons.svg#icon-instagram"></use>
                                     </svg></a></li>
-                            <li><a class="footer-socials-list__link" href="#">
-                                    <svg class="footer-socials-list__icon">
+                            <li><a class="socials__link socials__link--footer" href="#">
+                                    <svg class="socials__icon">
                                         <use href="./images/icons.svg#icon-twitter"></use>
                                     </svg></a></li>
-                            <li><a class="footer-socials-list__link" href="#">
-                                    <svg class="footer-socials-list__icon">
+                            <li><a class="socials__link socials__link--footer" href="#">
+                                    <svg class="socials__icon">
                                         <use href="./images/icons.svg#icon-facebook"></use>
                                     </svg></a></li>
-                            <li><a class="footer-socials-list__link" href="#">
-                                    <svg class="footer-socials-list__icon">
+                            <li><a class="socials__link socials__link--footer" href="#">
+                                    <svg class="socials__icon">
                                         <use href="./images/icons.svg#icon-linkedin"></use>
                                     </svg></a></li>
                         </ul>
@@ -210,8 +209,8 @@
                     <li>
                         <form name="newsletter-signup" class="newsletter-form" method="POST" autocomplete="on">
                             <input name="email" type="email" class="newsletter-form__input"  placeholder="E-mail">
-                            <button type="submit" class="newsletter-form-btn">Zapisz się
-                                <svg class="newsletter-form-btn__icon"><use href="./images/icons.svg#icon-newsletter-submit"></use></svg>
+                            <button type="submit" class="btn btn--newsletter">Zapisz się
+                                <svg class="btn__newsletter-icon"><use href="./images/icons.svg#icon-newsletter-submit"></use></svg>
                             </button>
                         </form>
                     </li>
@@ -221,8 +220,8 @@
     </footer>
     <div class="modal-backdrop modal-backdrop--is-hidden" data-modal>
         <div class="modal-box">
-            <button class="close-btn" type="button" data-modal-close>
-                <svg class="close-btn__icon">
+            <button class="btn btn--close" type="button" data-modal-close>
+                <svg class="btn__close-icon">
                     <use href="./images/icons.svg#icon-modal-box-close"></use>
                 </svg>
             </button>
@@ -240,7 +239,7 @@
                     <input class="signup-form__terms-checkbox singup-form__terms-checkbox--hidden" type="checkbox" name="terms-and-privacy" value="agree" id="terms">
                         <p>Oświadczam, że akceptuję <a class="signup-form__terms-link" href="#">Regulamin</a> i <a class="signup-form__terms-link" href="#">Politykę prywatności</a>.</p>
                 </label>
-                <button class="signup-form-btn" type="submit">Wyślij</button>
+                <button class="btn btn--sign-up" type="submit">Wyślij</button>
             </form>
         </div>
     </div>

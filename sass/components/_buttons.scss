@@ -1,0 +1,80 @@
+.btn {
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &--portfolio {
+        background: $portfolio-btn-bg-color;
+        font-weight: 500;
+        line-height: 1.62;
+        letter-spacing: 0.02em;
+        padding: 6px 22px;
+        transition: box-shadow $main-transition, color $main-transition, background-color $main-transition;
+
+        &:hover, 
+        &:focus {
+                color: $portfolio-btn-mod-color;
+                background-color: $main-brand-color;
+                box-shadow: $portfolio-btn-mod-shadow;
+            }
+    }
+    &--newsletter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $main-brand-color;
+        width: 200px;
+        padding: 10px 0px;
+        margin-left: 12px;
+        font-weight: 700;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        color: $newsletter-form-btn-color;
+        box-shadow: $newsletter-form-btn-shadow;
+    }
+    &__newsletter-icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 24px;
+        fill: $newsletter-form-btn-color;
+        }
+
+    &--close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background-color: $close-btn-bg-color;
+    }
+
+    &__close-icon {
+        width: 30px;
+        height: 30px;
+        border: 1px solid $close-btn-icon-border-color;
+        border-radius: 50%;
+    }
+
+    &--sign-up {
+            align-self: center;
+            font-weight: 700;
+            line-height: 1.88;
+            letter-spacing: 0.06em;
+            background-color: $main-brand-color;
+            color: $signup-form-btn-color;
+            width: 200px;
+            height: 50px;
+        }
+
+    &--slider {
+        color: $slider-btn-color;
+        background-color: $main-brand-color;
+        width: 200px;
+        height: 50px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        box-shadow: $slider-btn-shadow;
+    }
+}

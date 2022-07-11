@@ -1,33 +1,16 @@
 .portfolio-filter {
     padding-bottom: 50px;
 }
-.portfolio-btn {
-    background: $portfolio-btn-bg-color;
-    border: 0;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.02em;
-    padding: 6px 22px;
-    transition: box-shadow $main-transition, color $main-transition, background-color $main-transition;
-}
-.portfolio-btn:hover,
-.portfolio-btn:focus {
-    color: $portfolio-btn-mod-color;
-    background-color: $main-brand-color;
-    cursor: pointer;
-    box-shadow: $portfolio-btn-mod-shadow;
-}
 .portfolio-types {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-left: -8px;
     margin-bottom: -8px;
-}
-
-.portfolio-types__item {
+    
+    &__item {
     margin-left: 8px;
     margin-bottom: 8px;
+    }
+    
 }

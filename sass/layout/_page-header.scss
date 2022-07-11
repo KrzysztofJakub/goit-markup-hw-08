@@ -1,9 +1,9 @@
 .page-header {
     border-bottom: 1px solid $page-header-border-color;
-}
-.page-header__brand-logo {
+    
+    &__brand-logo {
     margin-right: 93px;
-}
-.page-footer__brand-logo {
     margin-bottom: 20px;
+    }
+    
 }

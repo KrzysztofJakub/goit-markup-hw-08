@@ -3,6 +3,11 @@
     align-items: center;
     margin-left: 22px;
 
+    &--footer {
+            display: flex;
+            align-items: center;
+    }
+
     &__item {
     margin-left: 10px;
     margin-bottom: 30px;
@@ -24,6 +29,13 @@
         &:focus {
         background-color: $main-brand-color;
         color: $socials-link-bg-color;
+        }
+
+        &--footer {
+            margin-right: 10px;
+            background-color: $footer-socials-link-bg-color;
+            color: $footer-socials-link-color;
+            transition: background-color $main-transition;
         }
     }
 

@@ -12,17 +12,19 @@
     border-radius: 4px;
     transform: scale(100%);
     transition: $main-transition;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 12px;
+        }
 }
+
 .modal-backdrop--is-hidden .modal-box {
     transform: scale(50%);
     transition: $main-transition;
 }
 
-.modal-box__title {
-    font-size: 20px;
-    font-weight: 700px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 12px;
-}
