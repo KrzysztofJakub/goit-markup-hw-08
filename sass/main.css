@@ -37,7 +37,6 @@ body {
 }
 .page-header__brand-logo {
   margin-right: 93px;
-  margin-bottom: 20px;
 }
 
 .page-footer {
@@ -157,11 +156,13 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #FFF;
+  margin-top: 20px;
   margin-right: 70px;
 }
 .brand-address__link {
   display: block;
   color: hsla(0deg, 0%, 100%, 0.6);
+  margin-top: 9px;
   font-weight: 500;
   font-size: 14px;
   line-height: 2;
@@ -599,6 +600,7 @@ body {
 .socials--footer {
   display: flex;
   align-items: center;
+  margin-left: 0;
 }
 .socials__item {
   margin-left: 10px;
