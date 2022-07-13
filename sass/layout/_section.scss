@@ -1,10 +1,24 @@
-.section {
-    padding: 94px 0;
-    
-    &__subtitle {
-        font-size: 36px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-align: center;
+// Mobile
+@media screen and (min-width: $mobile) {
+    .section {
+        padding: 60px 0;
+
+        &__subtitle {
+            text-align: center;
+        }
+    }
+}
+
+//Desktop
+@media screen and (min-width: $desktop) {
+    .section {
+        padding: 94px 0;
+        
+        &__subtitle {
+            font-size: 36px;
+            line-height: 1.17;
+            letter-spacing: 0.03em;
+            text-align: center;
+        }
     }
 }

@@ -1,3 +1,4 @@
+// Mobile
 .slider {
     background-image: $slider-bg-gradient,
         url('../images/slider-bg.jpg');
@@ -5,19 +6,44 @@
     background-position: center;
     background-repeat: no-repeat;
     max-width: 1600px;
-    min-height: 600px;
+    max-height: 400px;
     width: 100%;
     text-align: center;
-    padding: 200px 0;
+    padding: 118px 0;
     margin: 0 auto;
 
     &__title {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36em;
+        font-size: 26px;
+        line-height: 1.62em;
         text-transform: uppercase;
         color: $slider-title-color;
-        max-width: 630px;
+        max-width: 365px;
         margin: 0 auto 30px;
+    }
+}
+
+// Desktop
+@media screen and (min-width: $desktop) {
+    .slider {
+        background-image: $slider-bg-gradient,
+            url('../images/slider-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 1600px;
+        min-height: 600px;
+        width: 100%;
+        text-align: center;
+        padding: 200px 0;
+        margin: 0 auto;
+
+        &__title {
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36em;
+            max-width: 630px;
+            margin: 0 auto 30px;
+        }
     }
 }

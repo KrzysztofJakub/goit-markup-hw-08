@@ -1,12 +1,25 @@
+// Mobile
 .container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 
-    &--flex {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
+    
+}
+
+// Tablet
+@media screen and (min-width: $tablet) {
+   
+}
+
+// Desktop
+@media screen and (min-width: $desktop) {
+    .container {
+        &--flex {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
     }
 }

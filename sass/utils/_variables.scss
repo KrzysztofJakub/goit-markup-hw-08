@@ -81,3 +81,13 @@ $main-font-family: Roboto, Raleway, sans-serif;
 
 // Other
 $main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+// Screen helpers
+$container-min-width: 480px;
+$container-max-width: 1200px;
+
+// Media screen breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
