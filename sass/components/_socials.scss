@@ -1,48 +1,103 @@
-.socials {
-    display: flex;
-    align-items: center;
-    margin-left: 22px;
-
-    &--footer {
-            display: flex;
-            align-items: center;
-            margin-left: 0;
-    }
-
-    &__item {
-    margin-left: 10px;
-    margin-bottom: 30px;
-    }
-
-    &__link {
+// Mobile
+@media screen and (min-width: $mobile) {
+    .socials {
         display: flex;
-        justify-content: center;
         align-items: center;
-        align-self: center;
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        background-color: $socials-link-bg-color;
-        color: $socials-link-color;
-        transition: background-color $main-transition, color $main-transition;
-
-        &:hover,
-        &:focus {
-        background-color: $main-brand-color;
-        color: $socials-link-bg-color;
-        }
+        justify-content: center;
 
         &--footer {
-            margin-right: 10px;
-            background-color: $footer-socials-link-bg-color;
-            color: $footer-socials-link-color;
-            transition: background-color $main-transition;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 10px auto 60px;
+        }
+
+        &__item {
+        margin-right: 10px;
+        }
+
+        &__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: $socials-link-bg-color;
+            color: $socials-link-color;
+            transition: background-color $main-transition, color $main-transition;
+
+            &:hover,
+            &:focus {
+            background-color: $main-brand-color;
+            color: $socials-link-bg-color;
+            }
+
+            &--footer {
+                margin-left: 10px;
+                background-color: $footer-socials-link-bg-color;
+                color: $footer-socials-link-color;
+                transition: background-color $main-transition;
+            }
+        }
+
+        &__icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
         }
     }
+}
 
-    &__icon {
-        width: 20px;
-        height: 20px;
-        fill: currentColor;
+// Desktop
+@media screen and (min-width: $desktop) {
+    .socials {
+        display: flex;
+        align-items: center;
+        margin-left: 22px;
+
+        &--footer {
+                display: flex;
+                align-items: center;
+                margin-left: 0;
+        }
+
+        &__item {
+        margin-left: 10px;
+        margin-bottom: 30px;
+        }
+
+        &__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: $socials-link-bg-color;
+            color: $socials-link-color;
+            transition: background-color $main-transition, color $main-transition;
+
+            &:hover,
+            &:focus {
+            background-color: $main-brand-color;
+            color: $socials-link-bg-color;
+            }
+
+            &--footer {
+                margin-right: 10px;
+                background-color: $footer-socials-link-bg-color;
+                color: $footer-socials-link-color;
+                transition: background-color $main-transition;
+            }
+        }
+
+        &__icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
     }
 }

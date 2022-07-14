@@ -1,8 +1,12 @@
 // Mobile
-@media screen and (min-width: $mobile) {
-    .main-page-features {
+.main-page-features {
         display: none;
     }
+
+// Desktop
+@media screen and (min-width: 1200px) {
+.main-page-features {
+    display: block;
 }
 
 .features-list {
@@ -43,4 +47,5 @@
         color: $features-list-label-color;
         background-color: $features-list-label-bg-color;
     }
+}
 }

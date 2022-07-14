@@ -5,7 +5,8 @@
     margin-bottom: -30px;
 
     &__item {
-        max-width: 370px;
+        display:block;
+        min-width: 450px;
         margin-left: 30px;
         margin-bottom: 30px;
         transition: box-shadow $main-transition;

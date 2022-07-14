@@ -1,3 +1,34 @@
+// Mobile
+.brand-address {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $brand-address-color;
+        margin-top: 20px;
+        margin-bottom: 60px;
+
+        &__link {
+        display: block;
+        color: $brand-address-link-color;
+        margin-top: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 2;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        transition: $main-transition;
+
+            &:hover,
+            &:focus {
+                color: $main-text-color;
+            }
+        }
+    }
+
+
+// Desktop
+@media screen and (min-width: $desktop) {
 .brand-address {
     font-style: normal;
     font-size: 14px;
@@ -23,4 +54,5 @@
             color: $main-text-color;
         }
     }
+}
 }

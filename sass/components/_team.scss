@@ -1,5 +1,4 @@
 // Mobile 
-@media screen and (min-width: $mobile) {
 .team {
     background-color: $team-section-bg-color;
     }
@@ -23,8 +22,8 @@
             border-radius: 0px 0px 4px 4px;
             margin-left: 30px;
             margin-bottom: 30px;
-            min-width: 450px;
-            min-height: 622px;
+            width: 450px;
+            height: 622px;
         }
 
         &__img {
@@ -49,7 +48,7 @@
             margin-bottom: 16px;
         }
     }
-}
+
 
 // Desktop
 @media screen and (min-width: $desktop) {
@@ -74,6 +73,8 @@
             border-radius: 0px 0px 4px 4px;
             margin-left: 30px;
             margin-bottom: 30px;
+            width: 270px;
+            
         }
 
         &__name {
