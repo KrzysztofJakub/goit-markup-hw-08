@@ -1,5 +1,4 @@
 // Mobile
-@media screen and (min-width: $mobile) {
     .socials {
         display: flex;
         align-items: center;
@@ -48,7 +47,6 @@
             fill: currentColor;
         }
     }
-}
 
 // Desktop
 @media screen and (min-width: $desktop) {
