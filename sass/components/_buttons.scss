@@ -80,6 +80,24 @@
             letter-spacing: 0.06em;
             box-shadow: $slider-btn-shadow;
         }
+        
+        &--mobile-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0);
+            width: 40px;
+            height: 40px;
+            transition: $main-transition;
+            color: $secondary-text-color;
+        }
+        
+        &__mobile-menu-icon {
+            width: 40px;
+            height: 40px;
+            fill: currentColor;
+        }
     }
 
 // Desktop
