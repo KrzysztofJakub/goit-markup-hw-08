@@ -1,14 +1,14 @@
+// Mobile
 .modal-box {
     position: relative;
     top: 50%;
     left: 50%;
     background-color: $modal-box-bg-color;
-    width: 528px;
-    height: 581px;
+    max-width: 450px;
     padding: 40px;
+    margin-left: -225px;
+    margin-top: -304.5px;
     box-shadow: $modal-box-shadow;
-    margin-top: -290.5px;
-    margin-left: -264px;
     border-radius: 4px;
     transform: scale(100%);
     transition: $main-transition;
@@ -20,11 +20,44 @@
         text-align: center;
         letter-spacing: 0.03em;
         margin-bottom: 12px;
-        }
-}
+    }
+}    
 
-.modal-backdrop--is-hidden .modal-box {
-    transform: scale(50%);
-    transition: $main-transition;
+    .modal-backdrop--is-hidden .modal-box {
+        transform: scale(50%);
+        transition: $main-transition;
+    }
+
+
+@media screen and (min-width: $desktop) {
+    .modal-box {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        background-color: $modal-box-bg-color;
+        width: 528px;
+        height: 581px;
+        padding: 40px;
+        box-shadow: $modal-box-shadow;
+        margin-top: -290.5px;
+        margin-left: -264px;
+        border-radius: 4px;
+        transform: scale(100%);
+        transition: $main-transition;
+
+        &__title {
+            font-size: 20px;
+            font-weight: 700px;
+            line-height: 1.15;
+            text-align: center;
+            letter-spacing: 0.03em;
+            margin-bottom: 12px;
+            }
+    }
+
+    .modal-backdrop--is-hidden .modal-box {
+        transform: scale(50%);
+        transition: $main-transition;
+    }
 }
 

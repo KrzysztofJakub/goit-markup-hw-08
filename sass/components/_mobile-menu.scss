@@ -21,24 +21,19 @@
     &__list {
         flex-grow: 1;
         list-style: none;
-
-        &--margin-bottom {
-            margin-bottom: 64px;
-        }
+        margin-bottom: 64px;
     }
 
     &__item {
-        &--margin-bottom:not(:last-child) {
             margin-bottom: 32px;
         }
-    }
 
     &__link {
         font-weight: 500;
         font-size: 40px;
         line-height: 1.18;
         letter-spacing: 0.02em;
-        color: $main-text-color;
+        color: $secondary-text-color;
         text-decoration: none;
         transition: color $main-transition;
 
@@ -57,10 +52,10 @@
         &--email {
             font-size: 24px;
             line-height: 1.17;
-            color: $secondary-text-color;
+            color: $main-text-color;
         }
 
-        &--current-page {
+        &--active {
             color: $main-brand-color;
         }
     }
@@ -107,7 +102,7 @@
     &__socials-link {
         display: flex;
         align-items: center;
-        font-style: normal;
+        text-decoration: none;
         font-weight: 500;
         font-size: 18px;
         line-height: 1.22;
