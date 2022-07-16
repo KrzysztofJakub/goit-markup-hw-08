@@ -91,6 +91,11 @@
             height: 40px;
             transition: $main-transition;
             color: $secondary-text-color;
+
+            &:hover,
+            &:focus {
+                color: $main-brand-color;
+            }
         }
         
         &__mobile-menu-icon {
