@@ -406,6 +406,7 @@ body {
   .header-contacts {
     flex-direction: row;
     align-items: center;
+    margin-bottom: 0;
   }
   .header-contacts__item {
     margin-bottom: 0;
