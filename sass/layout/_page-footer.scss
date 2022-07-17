@@ -24,30 +24,55 @@
         }
     }
 
-// Desktop
-@media screen and (min-width: $desktop) {
+// Tablet
+@media screen and (min-width: $tablet) {
     .page-footer {
-        padding: 60px 0;
-        background-color: #2F303A;
 
         &__elements {
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &__address {
+            flex-basis: 50%;
         }
 
         &__socials {
+            flex-basis: 50%;
             margin-right: auto;
+        }
+        
+        &__newsletter {
+            margin: 0 auto;
+        }
+
+    }
+}
+
+// Desktop
+@media screen and (min-width: $desktop) {
+    .page-footer {
+        
+        &__elements {
+            justify-content: space-between;
+        }
+
+        &__address {
+            flex-basis: auto;
+            text-align: left;
+        }
+
+        &__socials {
+            flex-basis: auto;
+            margin: 0;
         }
 
         &__heading {
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.14;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            color: $footer-heading-color;
-            margin-top: 12px;
-            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        &__newsletter {
+            margin: 0;
         }
     }
 }

@@ -35,7 +35,7 @@
             }
 
             &--footer {
-                margin-left: 10px;
+                margin-right: 10px;
                 background-color: $footer-socials-link-bg-color;
                 color: $footer-socials-link-color;
                 transition: background-color $main-transition;
@@ -64,7 +64,6 @@
         }
 
         &__item {
-        margin-left: 10px;
         margin-bottom: 30px;
         }
 

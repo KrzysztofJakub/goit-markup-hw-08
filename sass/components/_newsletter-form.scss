@@ -28,6 +28,15 @@
     }
 }
 
+// Tablet
+@media screen and (min-width: $tablet) {
+    .newsletter-form {
+
+    &__input {
+        width: 450px;
+    }
+    }
+}
 // Desktop
 @media screen and (min-width: $desktop) {
     .newsletter-form {
@@ -35,12 +44,6 @@
 
         &__input {
             width: 358px;
-            font-size: 16px;
-            line-height: 1.25;
-            letter-spacing: 0.03em;
-            color: $newsletter-form-input-color;
-            transition: color $main-transition, border-color $main-transition;
-
         }
     }
 }
