@@ -12,7 +12,7 @@
     .team-members-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;;
+        justify-content: center;
         margin-left: -30px;
         margin-bottom: -30px;
 
@@ -22,13 +22,10 @@
             border-radius: 0px 0px 4px 4px;
             margin-left: 30px;
             margin-bottom: 30px;
-            width: 450px;
-            height: 622px;
         }
 
         &__img {
             width: 100%;
-            height: 460px;
             display: block;
         }
 
@@ -49,48 +46,24 @@
         }
     }
 
+// Tablet
+@media screen and (min-width: $tablet) {
+    .team-members-list {
+        justify-content: flex-start;
+        
+        &__item {
+            flex-basis: #{calc((100% / 2) - 30px)};
+        }
+    }
+}
 
 // Desktop
 @media screen and (min-width: $desktop) {
-
-    .team {
-        background-color: $team-section-bg-color;
-    }
-
-    .team-members-title {
-        margin-bottom: 50px;
-    }
-
     .team-members-list {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -30px;
-        margin-bottom: -30px;
 
         &__item {
-            background-color: $team-members-list-item-bg-color;
-            box-shadow: $team-members-list-item-shadow;
-            border-radius: 0px 0px 4px 4px;
-            margin-left: 30px;
-            margin-bottom: 30px;
-            width: 270px;
-            
-        }
-
-        &__name {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.19;
-            text-align: center;
-            margin: 30px auto 10px;
-        }
-
-        &__role {
-            font-size: 16px;
-            line-height: 1.19;
-            color: $main-text-color;
-            text-align: center;
-            margin-bottom: 16px;
+            max-width: 270px;
+            flex-basis: #{calc((100% / 4) - 30px)};
         }
     }
 }
