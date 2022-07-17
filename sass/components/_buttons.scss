@@ -96,6 +96,10 @@
             &:focus {
                 color: $main-brand-color;
             }
+
+            @media screen and (min-width: $tablet) {
+                display: none;
+            }
         }
         
         &__mobile-menu-icon {
