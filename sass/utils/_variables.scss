@@ -94,3 +94,13 @@ $container-max-width: 1200px;
 $mobile: 480px;
 $tablet: 768px;
 $desktop: 1200px;
+
+// Slider bg 1x
+$slider-bg-img: url('../images/slider-mobile/slider-@1x-480x400.jpg');
+$slider-bg-img-tablet: url('../images/slider-tablet/slider-@1x-768x400.jpg');
+$hero-bg-img-desktop: url('../images/slider-desktop/slider-@1x-1600x1200.jpg');
+
+// Slider bg 2x
+$slider-bg-img-2x: url('../images/slider-mobile/slider-@2x-960x800.jpg');
+$slider-bg-tablet-2x: url('../images/slider-tablet/slider-@2x-1536x800.jpg');
+$slider-bg-desktop-2x: url('../images/slider-desktop/slider-@2x-3200x1600.jpg');

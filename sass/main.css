@@ -946,7 +946,7 @@ body {
 }
 
 .slider {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/slider-bg.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/slider-mobile/slider-@1x-480x400.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -956,6 +956,11 @@ body {
   text-align: center;
   padding: 118px 0;
   margin: 0 auto;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .slider .slider {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/slider-mobile/slider-@2x-960x800.jpg");
+  }
 }
 .slider__title {
   font-weight: 900;
@@ -967,25 +972,32 @@ body {
   margin: 0 auto 30px;
 }
 
+.slider {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/slider-tablet/slider-@1x-768x400.jpg");
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .slider .slider {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/slider-tablet/slider-@2x-1536x800.jpg");
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .slider {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/slider-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 1600px;
-    min-height: 600px;
-    width: 100%;
-    text-align: center;
     padding: 200px 0;
-    margin: 0 auto;
+    min-height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/slider-desktop/slider-@1x-1600x600.jpg");
   }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .slider .slider {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/slider-desktop/slider-@2x-3200x1600.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
   .slider__title {
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36em;
     max-width: 630px;
-    margin: 0 auto 30px;
   }
 }
 .socials {
