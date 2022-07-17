@@ -33,18 +33,20 @@
 }
 
 // Tablet
-.slider {
-    background-image: $slider-bg-gradient,
-            url('../images/slider-tablet/slider-@1x-768x400.jpg');
+@media screen and (min-width: $tablet) {
+    .slider {
+        background-image: $slider-bg-gradient,
+                url('../images/slider-tablet/slider-@1x-768x400.jpg');
 
-    @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            .slider {
-                background-image: $slider-bg-gradient,
-                    url("../images/slider-tablet/slider-@2x-1536x800.jpg");
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                .slider {
+                    background-image: $slider-bg-gradient,
+                        url("../images/slider-tablet/slider-@2x-1536x800.jpg");
+                }
             }
-        }
+    }
 }
 
 // Desktop

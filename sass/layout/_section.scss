@@ -1,13 +1,11 @@
 // Mobile
-@media screen and (min-width: $mobile) {
-    .section {
+.section {
         padding: 60px 0;
 
         &__subtitle {
             text-align: center;
         }
     }
-}
 
 //Desktop
 @media screen and (min-width: $desktop) {

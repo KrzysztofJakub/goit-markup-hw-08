@@ -10,9 +10,6 @@
     }
 
     .team-members-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         margin-left: -30px;
         margin-bottom: -30px;
 
@@ -49,6 +46,8 @@
 // Tablet
 @media screen and (min-width: $tablet) {
     .team-members-list {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: flex-start;
         
         &__item {
